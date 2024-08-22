@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medication Reminder</h1>
+        <p>Set a time to receive a voice alert for your medication.</p>
+        <div class="input-group">
+            <input type="time" id="reminder-time" />
+            <input type="number" id="reminder-days" placeholder="Days" min="1" />
+            <button id="set-reminder">Set Reminder</button>
+            <button id="stop-reminder" style="display:none;">Stop Alert</button>
+        </div>
+        <p id="status"></p>
+
+        <div id="reminders-list">
+            <h3>Active Reminders:</h3>
+            <ul id="reminders"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
